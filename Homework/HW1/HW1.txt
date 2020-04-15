@@ -1,0 +1,86 @@
+# Problem 1
+Scenario: Physical - Head of the TSA
+
+Assumptions: 
+- I am in charge of setting the rules for screening passengers at airport checkpoints
+- I am in charge of many employees and do not have any superiors that directly influence my work
+
+Assets:
+- Employees - The actual employees that will be enforcing the TSA rules at airports
+- Ordinary Citizens - They are the main asset to protect from harm
+- Planes - The planes are the second main assets to protect because they can affect human lives if tampered with
+- Security Officers - They are responsible for investigating and intercepting possible threats to the public
+
+Threats:
+- Organized Crime Groups - Groups that will attempt to hijack, destroy or misuse a plane for personal reasons
+- Mentally Ill People - People who could possibly cause physical harm to others or be dangerous due to mental illness
+- Physical Illnesses - Physical illness outbreaks are potential in airports and on planes and could cause widespread harm to others
+- Terrorism - Individuals or groups of people following a (usually political or religious) ideal that seek to cause terror amongst citizens of different countries
+- Drugs - They can be smuggled through airports by people in various ways and can cause harm to the smugglers and the people that end up using them
+- Explosive Devices - They can be smuggled in through airports to cause damage to airport equipment and planes while also hurting innocent people
+
+Countermeasures to implement:
+- Metal Detectors - Scan for metal objects in luggage or inside/on a person to help prevent unwanted materials from getting on board of planes
+- Cavity Scans - Can detect illicit materials that may be inside of a person
+- Heavy Surveillance - Can monitor every area of every airport and have a dedicated surveillance team to help spot and intercept threats
+- Thermal Cameras - Can help with perimeter defense; allow "night-vision" by detecting heat sources
+
+Countermeasures but not to implement:
+- Drones - Can help eliminate threats alongside the perimeters of airports; it is a barbaric (and costly) countermeasure to implement for 24/7 surveillance at every airport
+
+
+# Problem 2
+Scenario: Digital - Managing the Email Server for a Major Presidential Campaign
+
+Assumptions: 
+- I am the only person managing the email server
+- The presidential campaign I am working with is a large target for attackers
+- There have been no attacks towards the email server as of yet
+
+Assets:
+- Email Server - The email server that must be protected from attacks
+- Encryption - The encryption scheme that encrypts all sensitive information sent and received
+
+Threats:
+- Hacktivists - Attackers that are looking to exploit the email server for political activism
+- Blackhat Hackers - Attackers that are looking to exploit the email server for their own financial gain
+- Insider Attacks - Attackers that are working within the presidential campaign to attack from the inside
+
+Countermeasures to implement:
+- Keyscrambling Program - Program that scrambles keystrokes so that keyloggers cannot intercept information while it is being typed
+- PGP Key Generating Software - Cryptographic public/private keys that can encrypt text before it is sent between two parties that are both using this software (so that emails cannot be read except by the two parties)
+- VPN (Virtual Private Network) - Ensures internet traffic is routed through safe servers so that information cannot be read over the wire
+- Strong Passwords - Passwords for the PGP keys, the email server and the VPN must be strong and strictly memorized
+- HDD Encryption - Encrypts the HDD that has the email server software so that it can only be accessed by me
+- Firewall Software - So that any malicious programs will not be able to interfere with the email server software
+
+Countermeasures but not to implement:
+- Background Checks on Employees - Can be used to determine if anybody working on the presidential campaign has a criminal background and could possibly be an Insider Attacker; however, it usually wouldn't detect these attackers
+
+
+# Problem 3
+Scenario: Digital & Physical - Protecting Nuclear Launch Code(s)
+
+Assumptions: 
+- I am somebody who has high-level access and a high-level knowledge of both physical and cyber security
+- I do not know the nuclear launch code(s) nor do I have access to that knowledge
+- The code(s) will only be known by a small group of people and can only be used by an even smaller group of people
+- The defenses must be 100% solid so that attacks are NOT possible
+
+Assets:
+- Nuclear Launch Code(s) - This is knowledge that must be shared by highly trusted parties vocally or through 100% secure digital communications
+- People with the Knowledge of the Code(s) - They must have both physical and digital security to protect them both from attacks, extortion and extremely high-level threats
+- Place Where the Code(s) Can Be Used - (Hopefully) there is only one place where the code(s) can be used; it should be secured as much as possible and have extremely limited access
+
+Threats:
+- Nation-Level Threats - Entire nations could be threats because the possession of the code(s) would mean the ability to launch the nuclear bombs from OUR nation
+- People with the Knowledge of the Code(s) - While they are the ones who are trusted with the code(s), they could also be potential threats if they were to give out the code(s) to unauthorized parties
+- Extortion - If attackers possess knowledge of the personal lives of those that know the code(s), they could try to extort the code(s) from them by trying to attack them personally
+
+Countermeasures to implement:
+- Rotate the Code(s) - The code(s) could be changed on an hourly or daily basis to prevent attackers from using them; if the code(s) change often than knowledge will not do anything without quick physical access to using them
+- Heavy Physical Security where the Code(s) Could be Used - By providing heavy physical security on the (hopefully one) place the code(s) can be used, it could only be accessed by people that have been pre-authorized and deemed trusted enough to have this high level of access
+- 100% Secure Encryption - Necessary for if the code(s) are shared digitally; at the least, it is necessary for the machine that generates the code(s) for storage and accessability purposes
+
+Countermeasures but not to implement:
+- 24/7 Surveillance of Parties That Know the Code(s) - The parties likely cannot be trusted to be without (at least almost) 24/7 surveillance to ensure that the code(s) are not shared with unauthorized parties, but this is unlikely to be implemented (however, the parties should still be under constant heavy surveillance)

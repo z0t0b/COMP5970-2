@@ -1,0 +1,114 @@
+# Problem 1
+Date/Time: 02/21/20 17:57
+Client Implementation: Firefox v73.0.1
+Question #1: TLSv1.2
+Question #2:
+    - TLS_AES_128_GCM_SHA256
+    - TLS_CHACHA20_POLY1305_SHA256
+    - TLS_AES_256_GCM_SHA384
+    - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+    - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+    - TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+    - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+    - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+    - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+    - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+    - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+    - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+    - TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+    - TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+    - TLS_RSA_WITH_AES_128_CBC_SHA
+    - TLS_RSA_WITH_AES_256_CBC_SHA
+    - TLS_RSA_WITH_3DES_EDE_CBC_SHA
+Question #3: AES (Advanced Encryption Standard) with 256 Bit Key
+Question #4: Galois/Counter Mode
+Question #5: ECDHE (Elliptic Curve Diffie-Hellman Ephemeral)
+Question #6: SHA384 (Secure Hash Algorithm 384)
+Question #7:
+    - server_name: An extension to the TLS protocol in which a client indicates the hostname it is attempting to connect to prior to the handshaking process; it is accepted.
+    - extended_master_secret: An extension to the original master_secret extension, this is a secret value computed either randomly by the client or as a result of a Diffie-Hellman key agreement; it is accepted.
+    - renegotiation_info: This extension allows either the client or the server to initiate renegotiation, which will establish new cryptographic parameters (although it will not cryptographically bind the client and the server, and is therefore vulnerable to attacks); it is accepted.
+    - supported_groups: This extension is for clients that offer one or more (EC)DHE cipher suites, and it is so it can provide which NamedGroup values are acceptable for the server to use; it is not accepted (because a different cipher suite was provided from the client and this extension is therefore not needed).
+    - ec_point_formats: This extension specifies the use of the ECDHE key agreement in a TLS handshake and the use of the ECDSA and EdDSA algorithms as authentication mechanisms; it is accepted.
+    - application_layer_protocol_negotiation: This extension is used when multiple application protocols are supported on the same TCP or UDP port so that the application layer can negotiate which protocol will be used in the TLS connection; it is accepted.
+    - status_request: This extension allows TLS clients and servers to negotiate that the server sends the client certificate status information during a TLS handshake; it is not accepted.
+    - key_share: This extension is for clients that offer one or more (EC)DHE cipher suites, and it provides the endpoint's cryptographic parameters to the other endpoint; it is not accepted.
+    - supported_versions: This extension is used by the client to indicate which versions of TLS it supports and by the server to indicate which version it is using; it is not accepted.
+    - signature_algorithms: This extension applies to signatures in CertificateVerify messages; it is not accepted.
+    - record_size_limit: This extension allows endpoints to negotiate the maximum size of protected records that each will send the other; it is not accepted.
+    - padding: This extension helps pad the Client Hello message to a desired size; it is not accepted.
+
+# Problem 2
+Date/Time: 02/21/20 21:28
+Client Implementation: Curl v7.68.0
+Question #1: TLSv1.2
+Question #2:
+    - TLS_AES_256_GCM_SHA384
+    - TLS_CHACHA20_POLY1305_SHA256
+    - TLS_AES_128_GCM_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+    - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+    - TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+    - TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+    - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+    - TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+    - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+    - TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+    - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+    - TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+    - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+    - TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+    - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+    - TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+    - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+    - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+    - TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+    - TLS_RSA_WITH_AES_256_GCM_SHA384
+    - TLS_RSA_WITH_AES_128_GCM_SHA256
+    - TLS_RSA_WITH_AES_256_CBC_SHA256
+    - TLS_RSA_WITH_AES_128_CBC_SHA256
+    - TLS_RSA_WITH_AES_256_CBC_SHA
+    - TLS_RSA_WITH_AES_128_CBC_SHA
+    - TLS_EMPTY_RENEGOTIATION_INFO_SCSV
+Question #3: AES (Advanced Encryption Standard) with 256 Bit Key
+Question #4: Galois/Counter Mode
+Question #5: ECDHE (Elliptic Curve Diffie-Hellman Ephemeral)
+Question #6: SHA384 (Secure Hash Algorithm 384)
+Question #7:
+    - server_name: An extension to the TLS protocol in which a client indicates the hostname it is attempting to connect to prior to the handshaking process; it is accepted.
+    - renegotiation_info: This extension allows either the client or the server to initiate renegotiation, which will establish new cryptographic parameters (although it will not cryptographically bind the client and the server, and is therefore vulnerable to attacks); it is accepted.
+    - ec_point_formats: This extension specifies the use of the ECDHE key agreement in a TLS handshake and the use of the ECDSA and EdDSA algorithms as authentication mechanisms; it is accepted.
+    - supported_groups: This extension is for clients that offer one or more (EC)DHE cipher suites, and it is so it can provide which NamedGroup values are acceptable for the server to use; it is not accepted (because a different cipher suite was provided from the client and this extension is therefore not needed).
+    - next_protocol_negotiation: This extension allows the application layer to negotiate which protocol should be performed over the secure connection; it is not accepted;
+    - application_layer_protocol_negotiation: This extension is used when multiple application protocols are supported on the same TCP or UDP port so that the application layer can negotiate which protocol will be used in the TLS connection; it is accepted.
+    - encrypt_then_mac: This extension is included in the Client Hello message if the client wishes to use encrypt-then-MAC rather than the default MAC-then-encrypt (which has been subject to a number of security vulnerabilities); it is not accepted.
+    - extended_master_secret: An extension to the original master_secret extension, this is a secret value computed either randomly by the client or as a result of a Diffie-Hellman key agreement; it is accepted.
+    - post_handshake_auth: This extension is used to indicate that a client is willing to perform post-handshake authentication; it is not accepted.
+    - signature_algorithms: This extension applies to signatures in CertificateVerify messages; it is not accepted.
+    - supported_versions: This extension is used by the client to indicate which versions of TLS it supports and by the server to indicate which version it is using; it is not accepted.
+    - psk_key_exchange_modes: This extension indicates the key exchange modes that may be used with PSKs; it is not accepted.
+    - key_share: This extension is for clients that offer one or more (EC)DHE cipher suites, and it provides the endpoint's cryptographic parameters to the other endpoint; it is not accepted.
+    - padding: This extension helps pad the Client Hello message to a desired size; it is not accepted.
+Question #8: curl https://hw2.aaspring.space/
+Question #9: The difference is that an encrypted alert is received when using Curl, but not when using Firefox browser - this could be an alert of any type but it is non-decipherable. A list of previous security implications for Curl can be found at https://curl.haxx.se/docs/security.html (although compared to the amount of previous and likely current security implications for Firefox they are minimal).
+
+# Problem 3
+Date/Time: 02/21/20 17:57
+Client Implementation: Firefox v73.0.1
+Question #1: The server sent a "Server Hello" message, a certificate, and the server key in separate messages sequentially before the client responded.
+Question #2: This could be done in a one-to-one conversation but the client would have nothing to send back after each of these messages (except maybe a confirmation that the information was received, but this could be done cumulatively after receiving all of the messages to reduce the amount of packets sent). Therefore it is smarter to send the messages sequentially instead of awaiting a response from the client every time, since this method reduces overhead time spent in the initial handshake before application data is transmitted.
+Question #3: The "Server Hello" message must be immediately after the "Client Hello" message, the server public key must be sent before the client public key can be sent back, and the client must send the encrypted handshake "finished" message prior to the server doing it. The reasons in respect to the aforementioned order is as follows: the "Server Hello" message must be able to pick a Cipher Suite from the options presented in the "Client Hello" message, the client must be able to encrypt the handshake "finished" message with the server's public key before transmission of that message and its' public key, and the client should be able to immediately send any encrypted application data after the communications are encrypted (after the handshake is finished) so that the server can immediately respond with the requested (and encrypted) application data.
+
+# Problem 4
+URL: https://twitter.com/
+Date/Time: 02/22/20 17:11
+Client Implementation: Microsoft Edge v44.18362.449.0
+Question #1: The server sends a new session ticket with the encrypted handshake "finished" message. This is unique to this connection because this connection involves authenticating a login, and this is done by using a session ticket (i.e., to establish resumption).
+Question #2: The resumed connection uses session tickets for resumption; this is evident on packet #489 within the attached pcapng file (problem-4-abbr.pcapng).
+Question #3: The server sends a session ticket which the client then associates with the server's IP address and TCP port; the client then stores the session ticket to use later to resume the connection. If the client sends this session ticket upon a resumed connection, the server will respond with the same session ticket to indicate that it recognizes it and the connection can be resumed.
+Question #4: If the client offered to resume the session and the server did not wish to, then when the client sends the session ticket to the server, the server will respond back with a different value for the session ticket (as opposed to responding with the same session ticket sent from the client, which would indicate that the connection was successfully resumed); this tells the client that a resumed handshake will not be done.
